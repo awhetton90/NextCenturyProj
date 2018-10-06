@@ -7,15 +7,27 @@
 
 
 #include "sam.h"
-
+#include "led.h"
+#include "button.h"
+#include "uart.h"
 
 int main(void)
 {
     /* Initialize the SAM system */
     SystemInit();
 
+	/* Initialize the Button */
+	BTN_Init();
+
+	/* Initialize the UART */
+	UART_Init();
+
+	/* Initialize the LED */
+	LED_Init();
+
     /* Replace with your application code */
     while (1) 
     {
+
     }
 }
