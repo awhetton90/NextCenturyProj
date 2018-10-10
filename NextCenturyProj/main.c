@@ -26,8 +26,5 @@ int main(void)
 	LED_Init();
 
     /* Replace with your application code */
-    while (1) 
-    {
-
-    }
+    while (1);
 }

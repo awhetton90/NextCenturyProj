@@ -11,6 +11,9 @@
 
 #include "types.h"
 
+#define UART_STRING "LED Blink Interval %dms"
+#define BAUD_RATE 115200
+
 void UART_Init(void);
 
 void UART_SendString(U8 *str);

@@ -143,6 +143,9 @@
     </ToolchainSettings>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="board_SAML22.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="button.c">
       <SubType>compile</SubType>
     </Compile>

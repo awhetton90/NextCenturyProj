@@ -10,7 +10,9 @@
 /* Initialize UART */
 void UART_Init(void)
 {
-	/* Initialize ability to send over UART */
+	/* Initialize ability to send over UART
+	 * Set baud rate.
+	 */
 
 }
 

@@ -17,6 +17,10 @@
 #define S8		int8_t
 #define S16		int16_t
 #define S32		int32_t
+#define BOOL    uint8_t
+
+#define TRUE	1
+#define FALSE	0
 
 
 #define LED_MS_500	    500

@@ -6,8 +6,8 @@
  */ 
 
  #include "button.h"
+ #include "led.h"
 
- extern U32 ledInterval;
 
  /* Initialize the Button */
  void BTN_Init(void)
@@ -18,17 +18,11 @@
  }
 
 /* Handle the interrupt when triggered by a button press.
- * May need to debounce the button. When a button is pressed
- * we reset the interrupt for the LED to fire with a different
- * interval.
+ * May need to debounce the button by implementing a counter.
+ * When a button is pressed we reset the interrupt for the
+ * LED to fire with a different interval.
  */
 void btnInterruptHandler(void)
 {
-	if(ledInterval == LED_MS_500){
-		ledInterval = LED_MS_2000;
-	} else{
-		ledInterval = LED_MS_500;
-	}
-
-	/* Reset the interrupts for LED */
+	LED_UpdateInterrupt();
 }

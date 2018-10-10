@@ -11,12 +11,11 @@
 
 #include "types.h"
 
-#define LED_PIN			91
-#define LED_PORT_MASK	(1UL << 27)
-
 void LED_Init(void);
 
 void ledInterruptHandler(void);
+
+void LED_UpdateInterrupt(void);
 
 
 
